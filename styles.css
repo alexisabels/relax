@@ -1,0 +1,84 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;  /* Asegura que el contenido se organice verticalmente */
+}
+
+html {
+    background-image: url(./olas.jfif);
+    background-size: cover;
+}
+
+#video-background {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    background: url('path_to_your_placeholder_image.jpg') no-repeat;
+    background-size: cover;
+}
+
+#app {
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    color: white;
+}
+
+#error-message {
+    color: red;
+    font-size: 24px;
+}
+
+#sound-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    outline: none;
+}
+
+#sound-button:focus {
+    outline: none;
+}
+
+#sound-button i {
+    color: #ffffff;
+}
+
+#sound-button.active i {
+    color: #66a6ff;
+}
+#music-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    outline: none;
+    color: #ffffff; 
+}
+#error-message, #timer, h1, p {
+    margin: 0;
+    padding: 10px;
+}
+#music-button.active i {
+    color: #c55529; 
+}
+#credit {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    font-size: 10px;
+    color: white;
+    text-align: center;
+}

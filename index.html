@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Relájate durante 2 minutos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <video autoplay muted loop id="video-background">
+        <source src="bg2.mp4" type="video/mp4">
+        Tu navegador no soporta video HTML5.
+    </video>
+    <div id="app">
+        <h1>relájate por 2 minutos</h1>
+        <p>solo relájate y escucha las olas y la música.</p>
+        <p>no toques el teclado ni el ratón</p>
+        <p id="error-message"></p>
+        <h1 id="timer">2:00</h1>
+        <button onclick="toggleSound()" id="sound-button"><i class="fas fa-volume-up"></i></button>
+        <button onclick="toggleMusic()" id="music-button"><i class="fas fa-music"></i></button>
+        <audio id="background-sound" src="https://sndup.net/fbn5/d" loop></audio>
+        <audio id="background-music" src="music.mp3" loop></audio> <!-- Añadir URL aquí -->
+    </div>
+    <p id="credit">hecho por alex isabel</p>
+
+    <script src="script.js"></script>
+</body>
+</html>
